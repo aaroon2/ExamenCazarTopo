@@ -4,7 +4,7 @@
     <aura:attribute name="sumar" type="Boolean"/>
     <aura:attribute name="score" type="Integer" default="0"/>
     <aura:attribute name="scoreFinal" type="Integer" default="0"/>
-
+    <aura:attribute name="numAnterior" type="Integer" default="0"/>
     <aura:handler event="c:reloadApexMethod" action="{!c.callApex}"/>
     <aura:handler event="c:almacenarIntentos" action="{!c.aumentarContador}"/>
     <table>
@@ -30,6 +30,6 @@
     <span>Puntuacion: {!v.scoreFinal}</span>
     <br/>
 
-    <lightning:button label="Start" onclick="{!c.callApex}" />
+    <lightning:button label="Start" onclick="{!c.reiniciarEj}" />
     <lightning:button label="Stop" onclick="{!c.stopGame}" />
 </aura:component>

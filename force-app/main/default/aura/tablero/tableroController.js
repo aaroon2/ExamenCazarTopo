@@ -6,12 +6,15 @@
     callApex : function(component, event, helper){
         var action = component.get("c.generar");
         var numIntento = event.getParam("numero");
+        var numAnterior = component.get("numAnterior");
         component.set("v.numIntento", numIntento);
+
         action.setCallback(this, function(response){
             var state = response.getState();
             if(state === "SUCCESS"){
                 var numero = response.getReturnValue();
                 component.set("v.numero", numero);
+                component.set("v.numAnterior", numero);
                 switch(numero){
                     case 1:
                         component.find("1").set("v.clase", "color");
@@ -117,5 +120,13 @@
         alert("HAS GANADO, Puntuacion: " + component.get("v.score"));
         component.set("v.scoreFinal", component.get("v.score"));
         component.set("v.score", 0);
+    },
+
+    reiniciarEj : function(component, event, helper){
+        helper.resetear(component);
+        helper.callApex(component, event);
+
     }
+
+
 })
