@@ -8,14 +8,14 @@
 
         if (myAttribute == "color"){
             var evento = $A.get("e.c:almacenarIntentos");
-            evento.SetParams({
+            evento.setParams({
                 "sumar" : true
             });
             evento.fire();
         }
         else {
             var evento = $A.get("e.c:almacenarIntentos");
-            evento.SetParams({
+            evento.setParams({
                 "sumar" : false
             });
             evento.fire();
