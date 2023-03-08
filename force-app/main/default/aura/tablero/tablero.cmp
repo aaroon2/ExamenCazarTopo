@@ -1,0 +1,9 @@
+<aura:component>
+    <aura:attribute name="numero" type="Integer">
+    <aura:attribute name="numIntentos" type="Integer">
+    <aura:attribute name="sumar" type="boolean">
+    <aura:attribute name="score" type="Integer" default="o">
+    <aura:attribute name="scoreFinal" type="Integer" default="0">
+
+
+</aura:component>	
