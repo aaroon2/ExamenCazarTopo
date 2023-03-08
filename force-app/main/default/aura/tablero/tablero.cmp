@@ -9,25 +9,27 @@
     <aura:handler event="c:almacenarIntentos" action="{!c.aumentarContador}"/>
     <table>
         <tr>
-            <td><c:topo aura:id="1"></td>
-            <td><c:topo aura:id="2"></td>
+            <td><c:topo aura:id="1"/></td>
+            <td><c:topo aura:id="2"/></td>
         </tr>
         <tr>
-            <td><c:topo aura:id="3"></td>
-            <td><c:topo aura:id="4"></td>
+            <td><c:topo aura:id="3"/></td>
+            <td><c:topo aura:id="4"/></td>
         </tr>
         <tr>
-            <td><c:topo aura:id="5"></td>
-            <td><c:topo aura:id="6"></td>
+            <td><c:topo aura:id="5"/></td>
+            <td><c:topo aura:id="6"/></td>
         </tr>
         <tr>
-            <td><c:topo aura:id="7"></td>
-            <td><c:topo aura:id="8"></td>
+            <td><c:topo aura:id="7"/></td>
+            <td><c:topo aura:id="8"/></td>
         </tr>
     </table>
+
     <br/>
+    <span>Puntuacion: {!v.scoreFinal}</span>
     <br/>
 
     <lightning:button label="Start" onclick="{!c.callApex}" />
     <lightning:button label="Stop" onclick="{!c.stopGame}" />
-</aura:component>	
+</aura:component>

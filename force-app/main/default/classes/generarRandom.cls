@@ -5,7 +5,7 @@ public with sharing class generarRandom {
 
     }
     @AuraEnabled
-    public static Tnteger generar(){
+    public static Integer generar(){
         try {
             Integer nuevoNumero;
             do {

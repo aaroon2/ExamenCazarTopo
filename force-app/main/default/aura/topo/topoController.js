@@ -6,7 +6,7 @@
     recibirClic : function(component, event, helper){
         var myAttribute = component.get("v.clase");
 
-        if(myAttribute == "color"){
+        if (myAttribute == "color"){
             var evento = $A.get("e.c:almacenarIntentos");
             evento.SetParams({
                 "sumar" : true

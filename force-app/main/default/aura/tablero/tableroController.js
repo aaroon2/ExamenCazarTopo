@@ -113,7 +113,7 @@
         evento.fire();
     },
 
-    stopGame(component, event){
+    stopGame : function(component, event){
         alert("HAS GANADO, Puntuacion: " + component.get("v.score"));
         component.set("v.scoreFinal", component.get("v.score"));
         component.set("v.score", 0);
